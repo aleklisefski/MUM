@@ -1,0 +1,251 @@
+<!-- ########## BEGIN FORMSITE SUCCESS PAGE STYLING  ########## -->
+
+<style type="text/css">
+
+/* reset whitespace */
+* { 
+	margin:0;
+	padding:0;
+}
+
+
+/* /////////////////////////////////
+	@FONT-FACE
+///////////////////////////////// */
+
+@font-face {
+    font-family: 'MuseoSlabLight';
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_100-webfont.eot');
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_100-webfont.woff') format('woff'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_100-webfont.ttf') format('truetype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_100-webfont.svg#museo_slab100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_300-webfont.eot');
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_300-webfont.woff') format('woff'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_300-webfont.ttf') format('truetype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_300-webfont.svg#MuseoSlab') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_300italic-webfont.eot');
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_300italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_300italic-webfont.woff') format('woff'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_300italic-webfont.ttf') format('truetype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_300italic-webfont.svg#museo_slab300_italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_500-webfont.eot');
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_500-webfont.woff') format('woff'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_500-webfont.ttf') format('truetype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museo_slab_500-webfont.svg#MuseoSlab') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museosans_300-webfont.eot');
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_300-webfont.woff') format('woff'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_300-webfont.ttf') format('truetype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_300-webfont.svg#MuseoSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museosans_300_italic-webfont.eot');
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museosans_300_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_300_italic-webfont.woff') format('woff'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_300_italic-webfont.ttf') format('truetype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_300_italic-webfont.svg#MuseoSans') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museosans_500-webfont.eot');
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_500-webfont.woff') format('woff'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_500-webfont.ttf') format('truetype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_500-webfont.svg#MuseoSans') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museosans_500_italic-webfont.eot');
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museosans_500_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_500_italic-webfont.woff') format('woff'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_500_italic-webfont.ttf') format('truetype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_500_italic-webfont.svg#MuseoSans') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'MuseoSansBold';
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museosans_900-webfont.eot');
+    src: url('https://fs19.formsite.com/maharishiuniversity/images/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_900-webfont.woff') format('woff'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_900-webfont.ttf') format('truetype'),
+         url('https://fs19.formsite.com/maharishiuniversity/images/museosans_900-webfont.svg#MuseoSansBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+/* /////////////////////////////////
+	Formsite Success Pages
+///////////////////////////////// */
+
+
+body {
+	font: normal 14px/20px MuseoSans, arial, sans-serif;
+	color: #666;
+	background: #fbf8f1;
+	margin: 0;
+	padding: 0;
+}
+
+
+h2,
+h3 {
+	font-family: MuseoSlab, arial, sans-serif; 
+	font-weight: normal;
+	color: #333;
+}
+
+h2 {
+	font-family: MuseoSlabLight, arial, sans-serif;
+	text-transform: uppercase; 
+	letter-spacing: 3px;  
+	font-size: 30px;
+	line-height: 36px;
+	margin-bottom: 40px;
+	color: #666;
+	text-align: left;
+}
+
+h3 {
+	font-weight: bold; 
+	font-size: 20px;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+
+/* /////////////////////////////////
+	DEFAULT LINKS
+///////////////////////////////// */
+
+a, a:visited { 
+	color: #59ae35;
+	text-decoration: underline;
+}
+
+a:hover { 
+	text-decoration: underline;
+	color: #f1a416;
+}
+
+
+/* /////////////////////////////////
+	TABLES
+///////////////////////////////// */
+
+table {
+	margin: 30px 0;
+	border: 0;
+}
+
+td {
+	min-width: 100px;
+	padding: 10px;
+	border-top: 2px solid #fff;
+	border-right: 1px solid #fff;
+	background: #faf8f1;
+	border-collapse: separate;
+}
+
+tr.white td {
+	padding: 8px 10px;
+	background: #fff;
+}
+
+strong,
+p strong,
+td strong {
+	color: #333;
+}
+
+p,
+table p {
+	margin: 0 0 20px 0;
+}
+
+
+th {
+	background-color: #0179be;
+	border-top: 4px solid #159bcd;
+	color: #fff;
+	font-family: MuseoSansBold, arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 7px 11px;
+	text-align: left;
+}
+
+th.textright,
+td.textright {
+	text-align: right;
+}
+
+
+/* /////////////////////////////////
+	LISTS
+///////////////////////////////// */
+
+
+ul {
+	list-style-type: none;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+li,
+li ul li {
+	text-align: left;
+	background: url(https://fs19.formsite.com/maharishiuniversity/images/bullet.png) no-repeat left 4px;
+	line-height: 20px;
+	padding: 0 0 16px 14px;
+}
+
+</style>
+
+<!-- ########## END FORMSITE SUCCESS PAGE STYLING  ########## -->

@@ -1,0 +1,61 @@
+
+
+
+/* added by ismail start=> */
+
+.border-bottom-tan {
+	border-bottom-color: #fbf5e1;
+}
+
+#hero.tan, 
+#hero.tan .slide {
+	background-color: #fbf5e1;
+}
+
+#hero .slide .brochure-form {
+	bottom: auto;
+    right: 16%;
+    top: 60px;
+    width: 240px;
+}
+
+#hero .slide .brochure-form .heading h4 {
+    font-family: 'MuseoSlabLight';
+	font-size: 13px;
+    font-weight: 300;
+}
+
+#hero .slide .brochure-form form {
+	padding: 25px 30px;
+}
+
+#hero .slide .brochure-form form input[type="text"] {
+    border: none;
+    color: #666666;
+    margin-bottom: 5px;
+    padding: 8px;
+    width: 162px;
+}
+
+#hero .slide .brochure-form form input[type="submit"] {
+    width: 180px;
+}
+
+#hero .slide .brochure-form form .blue {
+	background: none;
+}
+
+.video-section .left-video .button.green {
+    right: 20px !important;	
+}
+
+@media only screen and (min-width : 640px) {
+	.video-section .left-video {
+		width: 40% !important;
+	}
+}
+	.video-section .left-video a {
+		width: 100% !important; 
+		max-width: 100% !important;
+	}
+/* <= added by ismail end */

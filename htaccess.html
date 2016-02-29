@@ -1,0 +1,93 @@
+SetEnv PHPRC /home/mum74552/public_html/php.ini
+
+# BEGIN HTTPS Redirection Plugin
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+# END HTTPS Redirection Plugin
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+##### Add Browser Caching ######
+ExpiresActive on
+ExpiresByType text/css "access plus 14 days"
+ExpiresByType text/xml "access plus 0 seconds"
+ExpiresByType text/javascript "access plus 14 days"
+ExpiresByType application/x-javascript "access plus 14 days"
+ExpiresByType image/ico "access plus 14 days"
+ExpiresByType image/jpg "access plus 14 days"
+ExpiresByType image/jpeg "access plus 14 days"
+ExpiresByType image/gif "access plus 14 days"
+ExpiresByType image/png "access plus 14 days"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType text/html "access plus 14 days"
+ExpiresByType video/ogg "access plus 1 month"
+ExpiresByType audio/ogg "access plus 1 month"
+ExpiresByType video/mp4 "access plus 1 month"
+ExpiresByType video/webm "access plus 1 month"
+ExpiresByType application/x-font-woff "access plus 1 month"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+ExpiresByType application/xml "access plus 0 seconds"
+ExpiresByType application/json "access plus 0 seconds"
+ExpiresByType application/rss+xml "access plus 1 hour"
+ExpiresByType application/atom+xml "access plus 1 hour"
+##### End Browser Caching ######
+
+## ENABLE GZIP COMPRESSION ##
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+## ENABLE GZIP COMPRESSION ##
+
+# Permanent URL redirect for IE7 Browser
+# RewriteCond %{HTTP_USER_AGENT} "MSIE [6-7]" [NC]
+# RewriteRule ^(.*)$ http://www.mum.edu/ie7-error [R=301,L]
+
+#RedirectMatch 301 ^/graduation/.* http://portals.mum.edu/RelId/623232/ISvars/default/Application_for_Graduation.htm
+
+Redirect 301 /lean http://portals.mum.edu/default.aspx?relid=652962
+Redirect 301 /graduation http://portals.mum.edu/RelId/623232/ISvars/default/Application_for_Graduation.htm
+Redirect 301 /graduation/application.html http://portals.mum.edu/RelId/623232/ISvars/default/Application_for_Graduation.htm
+Redirect 301 /giving http://portals.mum.edu/default.aspx?relid=606517
+Redirect 301 /pay http://portals.mum.edu/pay
+Redirect 301 /award https://www.mum.edu/wp-content/uploads/2014/10/new-award-letter272163.pdf
+Redirect 301 /finaid http://portals.mum.edu/RelId/612843/ISvars/default/Finances.htm
+Redirect 301 /visitors https://www.mum.edu/admissions/visitors-weekends/overview/
+Redirect 301 /living-soils https://www.mum.edu/academic-departments/sustainable-living/continuing-education/living-soils/
+Redirect 301 /living-soil https://www.mum.edu/academic-departments/sustainable-living/continuing-education/living-soils/
+Redirect 301 /library http://portals.mum.edu/default.aspx?relid=632443
+Redirect 301 /online http://portals.mum.edu/default.aspx?relid=667562
+Redirect 301 /deep-sustainability https://www.mum.edu/academic-departments/sustainable-living/ma-program/overview
+Redirect 301 /continuing-education http://portals.mum.edu/continuing-education
+Redirect 301 /de http://portals.mum.edu/online
+Redirect 301 /total-knowledge http://www.eventbrite.com/e/total-knowledge-courses-with-raja-peter-warburton-june-2015-registration-16459123682
+Redirect 301 /compro/ http://mscs.mum.edu
+Redirect 301 /compro/financial http://mscs.mum.edu/financial-aid/overview.html
+Redirect 301 /assets/Maharishi-Vedic-Science-Thesaurus/repgen.htm http://portals.mum.edu/Customized/Uploads/MVS-Thesaurus/repgen.htm
+Redirect 301 /award https://www.mum.edu/consumer-information/financial-aid-information/award-notification/
+Redirect 301 /ms-md https://www.mum.edu/academic-departments/physiology-and-health/dual-degree-md-ms-program
+Redirect 301 /visit https://www.mum.edu/admissions/visitors-weekends/
+Redirect 301 /continuing-ed https://www.mum.edu/blog/category/departments/continuing-education/
+Redirect 301 /mat https://www.mum.edu/two-introduction-to-maharishi-aromatherapy-courses-starting-in-march-2016/   
+
+RewriteCond %{HTTP_HOST} ^dev\.mum\.edu$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.dev\.mum\.edu$
+RewriteRule ^/?$ "http\:\/\/www\.mum\.edu" [R=301,L]

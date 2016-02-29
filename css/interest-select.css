@@ -1,0 +1,501 @@
+/* /////////////////////////////////////
+	Department Interest Select CSS 
+	by Alek Lisefski
+	http://www.bluesheepstudios.com
+///////////////////////////////////// */
+
+#news, section#page-header {
+    border-top: 0;
+}
+
+/* HTML5 Background Video */
+
+#hero.bg-video {
+	background-color: #222;
+}
+
+#hero.bg-video .gradiant {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	
+	background: -webkit-linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.9));
+	background: -o-linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.9));
+	background: -moz-linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.9));
+	background: linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.9));
+}
+
+#hero.bg-video .slide .slide-info.download.blue,
+.slide-info.download.blue {
+    background-color: #1398cc;
+    max-width: 500px;
+    width: 500px;
+    top: auto;
+    bottom: 8%;
+    left: 50%;
+    margin-left: -250px;
+    z-index: 500;
+}
+
+.body .slide-info.download.blue {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 40px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    max-width: 500px;
+    top: auto;
+    width: 500px;
+    z-index: 500;
+}
+
+#hero.bg-video .slide .blue.border-top {
+    border: 0;
+    border-bottom: 5px solid #159bcd;
+    padding: 20px 25px 0;
+}
+
+.body .slide-info.download.blue .heading {
+    padding: 20px 25px 10px;
+}
+
+
+#hero.bg-video .video-overlay {
+	position: absolute;
+	z-index: 101;
+	top: 25%;
+	width: 100%;
+	left: 0;
+	color: #fff;
+	text-align: center;
+}
+
+#hero.bg-video .video-overlay h1,
+#hero.bg-video .video-overlay h2 {
+	text-align: center;
+	color: #fff;
+	width: 80%;
+	margin: 0 10%;
+}
+
+#hero.bg-video .video-overlay h2 {
+	font-family: MuseoSans;
+	font-weight: normal;
+	text-transform: none;
+	letter-spacing: 0;
+	font-size: 36px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+#hero.bg-video .video-overlay h1 {
+	font-size: 56px;
+	line-height: 54px;
+}
+
+#hero.bg-video .slide .slide-info.download.blue .heading h3,
+.slide-info.download.blue .heading h3 {
+    text-align: left;
+   	font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+
+#hero.bg-video .slide .slide-info.download.blue .heading .select,
+.slide-info.download.blue .heading .select {
+    display: inline-block;
+    float: left;
+    width: 65%;
+    padding: 0;
+    margin: 0 2% 0 0;
+}
+
+#hero.bg-video .slide .slide-info.download.blue .heading .select .ui-selectmenu,
+.slide-info.download.blue .heading .select .ui-selectmenu {
+	margin-bottom: 20px;
+}
+
+#hero.bg-video .slide .slide-info.download.blue input[type="submit"], 
+#hero.bg-video .slide .slide-info.download.blue a.button, 
+#hero.bg-video .slide .slide-info.download.blue a.button:visited,
+.slide-info.download.blue input[type="submit"], 
+.slide-info.download.blue a.button, 
+.slide-info.download.blue a.button:visited {
+	display: inline-block;
+	float: left;
+    padding: 10px 0 6px;
+    text-align: center;
+    width: 33%;
+    font-size: 13px;
+}
+
+.slide-info.download.blue input[type="submit"], 
+.slide-info.download.blue a.button, 
+.slide-info.download.blue a.button:visited {
+    margin: 0;
+}
+
+section.body h3.margin-bottom-none {
+	margin-bottom: 1px;
+}
+
+/* /////////////////////////////////
+	DLMA Signup Pop-up
+///////////////////////////////// */
+
+
+.download_popup {
+	background-color: #fcfaf1;
+	background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+	background-position: right top, -500px top, -100px bottom, center top;
+	padding: 60px 90px 60px 60px;
+	width: 560px;
+	text-align: left;
+}
+
+.download_popup ul {
+	list-style-type: none;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+.download_popup li {
+	text-align: left;
+	background: url(../media/bullet.png) no-repeat left 4px;
+	line-height: 18px;
+	padding: 0 0 8px 14px;
+}
+
+.download_popup h2,
+.download_popup h3,
+.download_popup h4,
+.download_popup p,
+.download_popup li {
+	color: #333;
+	text-align: left;	
+}
+
+.download_popup h2 {
+	font-family: MuseoSlab, arial, sans-serif;
+	font-weight: bold;
+	text-transform: none; 
+	letter-spacing: 0;  
+	font-size: 32px;
+	line-height: 36px;
+	margin-bottom: 0;
+	color: #333;
+	margin-bottom: 30px;
+}
+
+.download_popup h4 {
+	font: bold 15px/20px MuseoSansBold, arial, sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 30px;	
+}
+
+
+.download_popup input[type="text"],
+.download_popup input[type="email"],
+.download_popup textarea {
+	display: block;
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-shadow: none;
+	-webkit-appearance: none;
+	width: 95%;
+	text-indent: 15px;
+	height: 100%;
+	padding: 10px 5% 9px 0;
+	margin: 0 -2px 4px -2px;
+	border: 0;
+	text-align: left;
+	outline: none;
+	-moz-box-shadow: none;
+	border-radius: 0;
+	font: normal 14px/18px MuseoSans, arial, sans-serif;
+	color: #666;
+	background-color: #fff;
+	border: 2px solid #fbf8f1;
+
+	-webkit-transition: all .1s ease;	
+	-moz-transition: all .1s ease;			
+	-o-transition: all .1s ease;						
+	transition: all .1s ease;		
+}
+
+.download_popup input[type="text"]:focus,
+.download_popup input[type="email"]:focus,
+.download_popup textarea:focus {
+	color: #333;	
+	border-color: #f7f1e4;
+
+	-webkit-transition: all .1s ease;	
+	-moz-transition: all .1s ease;			
+	-o-transition: all .1s ease;						
+	transition: all .1s ease;	
+}
+
+.download_popup .size1of2 label {
+	float: left;
+	display: inline-block;
+	line-height: 18px;
+	padding: 10px 5% 9px 0;
+	margin: 0;
+	min-width: 0;
+	width: 19%;
+}
+
+.download_popup .phonefield-us input[type="text"] {
+	display: inline-block;
+	width: 19%;
+}
+
+.download_popup input[type="submit"] {
+	color: #fff;
+	background: #f6bd27;
+	border-color: #f1a718;
+	padding: 10px 0 7px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;	
+    margin-top: 4px;
+}
+
+.download_popup input[type="submit"]:hover {
+	background: #59ae35 url('../media/bg_green.gif') repeat left top;
+	border-bottom: 4px solid #59ae35;
+}
+
+.download_popup .input-group p {
+	margin: 10px 0 8px 10px;
+}
+
+
+.download_popup .input-group ul {
+	margin: 0;
+}
+
+.download_popup .input-group li {
+	background: none;
+	padding: 0 0 0 10px;
+	display: inline-block;
+	float: left;
+	margin: 0 0 20px 0;
+	width: 50px;
+}
+
+.download_popup .input-group li input[type="radio"] {
+	display: inline;
+	float: left; 
+	margin: 0 4px 0 0;
+}
+
+.download_popup .input-group li label {
+	display: inline;
+	min-width: 0;
+	margin: 0;
+	float: none;
+	clear: none;
+}
+
+.landing_intro {
+	clear: left;
+}
+
+
+/* //////// Tablet //////// */
+
+@media screen and (max-width: 1024px) {
+
+	#hero.bg-video {
+		background-color: #222;
+		height: auto;	
+	}
+	
+	#hero.bg-video .slide {
+		height: auto;
+		padding-bottom: 0;	
+	}
+	
+	#hero.bg-video .gradiant {
+		height: 300px;
+	}
+	
+	#hero.bg-video .slide .slide-info.download.blue {
+		position: relative;
+		display: block;
+		right: 0;
+		left: 0;
+		top: 0;
+		clear: left;
+		margin: 0;
+		height: auto;
+		width: 100%;	
+		max-width: 100%;
+	}
+	
+	#hero.bg-video .slide .slide-info.download.blue .heading {
+		padding: 30px 4% 10px;
+	}
+	
+	
+	#hero.bg-video .gradiant {
+		display: none;
+	}
+	
+	#hero.bg-video .video-overlay {
+		top: 18%;
+	}
+	
+	#hero.bg-video .video-overlay h2 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	
+	#hero.bg-video .video-overlay h1 {
+		font-size: 52px;
+		line-height: 60px;
+	}
+	
+	.download_popup {
+		padding: 40px 6%;
+		width: 88%;
+	}	
+	
+	
+}
+
+/* //////// Mobile //////// */
+
+@media screen and (max-width: 640px) {
+
+	#hero .slide img.tablet.mobile {
+	    display: none;
+	}
+	
+	#hero.bg-video .slide {
+		background: #fff;
+	}
+	
+	
+	#hero.bg-video .video-overlay {
+		position: static;
+		right: auto;
+		top: auto;
+		clear: left;
+		margin-top: 0;
+		height: auto;
+		width: 88%;	
+		padding: 35px 6% 30px;	
+	}
+	
+	#hero.bg-video .video-overlay h1,
+	#hero.bg-video .video-overlay h2 {
+		color: #333;
+		width: 100%;
+		margin: 0;
+	}
+	
+	#hero.bg-video .video-overlay h2 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+	#hero.bg-video .video-overlay h1 {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	
+	.body .slide-info.download.blue {
+		position: relative;
+		display: block;
+		right: 0;
+		left: 0;
+		top: 0;
+		clear: left;
+		margin: 0;
+		height: auto;
+		width: 100%;	
+		max-width: 100%;
+		margin-top: 30px;
+	}
+	
+	#hero.bg-video .slide .slide-info.download.blue .heading,
+	.body .slide-info.download.blue .heading {
+	    padding: 20px 25px 0;
+	}	
+	
+	#hero.bg-video .slide .slide-info.download.blue .heading h3,
+	.body .slide-info.download.blue .heading h3  {
+	   	font-size: 18px;
+	    line-height: 20px;
+	}	
+	
+	#hero.bg-video .slide .slide-info.download.blue .heading .select,
+	.body .slide-info.download.blue .heading .select {
+	    display: block;
+	    float: none;
+	    width: 100%;
+	    margin: 0;
+	}
+	
+	#hero.bg-video .slide .slide-info.download.blue .heading .select .ui-selectmenu,
+	.body .slide-info.download.blue .heading .select .ui-selectmenu {
+		margin-bottom: 10px;
+	}		
+	
+	#hero.bg-video .slide .slide-info.download.blue input[type="submit"], 
+	#hero.bg-video .slide .slide-info.download.blue a.button, 
+	#hero.bg-video .slide .slide-info.download.blue a.button:visited,
+	.body .slide-info.download.blue input[type="submit"], 
+	.body .slide-info.download.blue a.button, 
+	.body .slide-info.download.blue a.button:visited  {
+		clear: left;
+		display: block;
+		float: none;
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	
+	.download_popup {
+		padding: 30px 6%;
+		width: 88%;
+	}
+	
+
+	.download_popup h4 {
+		margin-bottom: 30px;	
+	}
+	
+	.download_popup ul {
+		margin-bottom: 20px;
+		margin-left: 0;	
+	}
+	
+
+}
+
+/* /////////////////////////////////
+	@2x Images
+///////////////////////////////// */
+
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),  
+        only screen and (   min--moz-device-pixel-ratio: 1.5),  
+        only screen and (     -o-min-device-pixel-ratio: 3/2),  
+        only screen and (        min-device-pixel-ratio: 1.5),  
+        only screen and (min-resolution: 192dpi) {  
+        
+#lynch-signup li {
+		background-image: url(../media/bullet_light@2x.png);
+		-webkit-background-size: 6px 10px;
+		-moz-background-size: 6px 10px;
+		background-size: 6px 10px;
+	}
+	
+
+}

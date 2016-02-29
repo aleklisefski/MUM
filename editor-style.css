@@ -1,0 +1,254 @@
+/* /////////////////////////////////
+	@FONT-FACE
+///////////////////////////////// */
+
+@font-face {
+    font-family: 'MuseoSlabLight';
+    src: url('font/museo_slab_100-webfont.eot');
+    src: url('font/museo_slab_100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/museo_slab_100-webfont.woff') format('woff'),
+         url('font/museo_slab_100-webfont.ttf') format('truetype'),
+         url('font/museo_slab_100-webfont.svg#museo_slab100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('font/museo_slab_300-webfont.eot');
+    src: url('font/museo_slab_300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/museo_slab_300-webfont.woff') format('woff'),
+         url('font/museo_slab_300-webfont.ttf') format('truetype'),
+         url('font/museo_slab_300-webfont.svg#MuseoSlab') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('font/museo_slab_300italic-webfont.eot');
+    src: url('font/museo_slab_300italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/museo_slab_300italic-webfont.woff') format('woff'),
+         url('font/museo_slab_300italic-webfont.ttf') format('truetype'),
+         url('font/museo_slab_300italic-webfont.svg#museo_slab300_italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('font/museo_slab_500-webfont.eot');
+    src: url('font/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/museo_slab_500-webfont.woff') format('woff'),
+         url('font/museo_slab_500-webfont.ttf') format('truetype'),
+         url('font/museo_slab_500-webfont.svg#MuseoSlab') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('font/museosans_300-webfont.eot');
+    src: url('font/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/museosans_300-webfont.woff') format('woff'),
+         url('font/museosans_300-webfont.ttf') format('truetype'),
+         url('font/museosans_300-webfont.svg#MuseoSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('font/museosans_300_italic-webfont.eot');
+    src: url('font/museosans_300_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/museosans_300_italic-webfont.woff') format('woff'),
+         url('font/museosans_300_italic-webfont.ttf') format('truetype'),
+         url('font/museosans_300_italic-webfont.svg#MuseoSans') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('font/museosans_500-webfont.eot');
+    src: url('font/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/museosans_500-webfont.woff') format('woff'),
+         url('font/museosans_500-webfont.ttf') format('truetype'),
+         url('font/museosans_500-webfont.svg#MuseoSans') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('font/museosans_500_italic-webfont.eot');
+    src: url('font/museosans_500_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/museosans_500_italic-webfont.woff') format('woff'),
+         url('font/museosans_500_italic-webfont.ttf') format('truetype'),
+         url('font/museosans_500_italic-webfont.svg#MuseoSans') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'MuseoSansBold';
+    src: url('font/museosans_900-webfont.eot');
+    src: url('font/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/museosans_900-webfont.woff') format('woff'),
+         url('font/museosans_900-webfont.ttf') format('truetype'),
+         url('font/museosans_900-webfont.svg#MuseoSansBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+/* /////////////////////////////////
+	BASIC TEXT / HEADINGS
+///////////////////////////////// */
+
+
+h1, 
+h2,
+h3,
+h4,
+h5 {
+	font-family: MuseoSlab, arial, sans-serif; 
+	font-weight: normal;
+	color: #333;
+}
+
+h1 {
+	font-weight: bold; 
+	font-size: 33px;
+	line-height: 38px;
+}
+
+
+h2 {
+	font-family: MuseoSlabLight, arial, sans-serif;
+	text-transform: uppercase; 
+	letter-spacing: 3px;  
+	font-size: 30px;
+	line-height: 36px;
+	margin-bottom: 30px;
+	color: #666;
+	text-align: left
+}
+
+h3 {
+	font-weight: bold; 
+	font-size: 20px;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+
+section.body article h3 {
+	margin-bottom: 30px;
+}
+
+h4 {
+	font-weight: bold; 
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 1px;
+}
+
+h5 {
+	font-family: MuseoSlabLight, arial, sans-serif; 
+	text-transform: uppercase; 
+	letter-spacing: 1px; 
+	font-size: 13px;
+	line-height: 14px;
+	margin-bottom: 2px;
+	color: #000;
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+strong, b, .bold {
+	font-weight: bold;
+}
+
+p strong,
+li strong,
+p.bold {
+	color: #333;
+}
+
+
+/* /////////////////////////////////
+	DEFAULT LINKS
+///////////////////////////////// */
+
+a, a:visited { 
+	color: #59ae35;
+	text-decoration: underline;
+}
+
+h3 a,
+h3 a:visited {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover,
+h3 a:hover { 
+	text-decoration: underline;
+	color: #f1a416;
+}
+
+a:focus {
+	outline:none
+}
+
+a img {
+	border: none;
+}
+
+/* /////////////////////////////////
+	CLASSES
+///////////////////////////////// */
+
+
+h2.border-top,
+h3.border-top {
+	border-top: 4px solid #faf8f1;
+	margin-top: 45px;
+	padding-top: 40px;
+	margin-bottom: 35px;
+}
+
+.body img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 30px 0;
+}
+
+.body .col.half img {
+	margin: 0 0 20px 0;
+}
+
+img.float-left,
+img.alignleft,
+.caption.float-left,
+.caption.alignleft  {
+	float: left;
+	margin: 0 40px 20px 0;
+	max-width: 50%;
+}
+img.float-right,
+img.alignright,
+.caption.float-right,
+.caption.alignright {
+	float: right;
+	margin: 0 0 20px 40px;
+	max-width: 50%;
+}
+

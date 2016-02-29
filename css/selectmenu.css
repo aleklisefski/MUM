@@ -1,0 +1,190 @@
+/* Selectmenu
+----------------------------------*/
+
+.ui-selectmenu {  
+	overflow: hidden; 
+	zoom: 1;
+	display: block;
+	width: 100% !important;
+	padding: 10px 0 8px 0;
+	text-indent: 15px;
+	margin: 0 0 24px 0;
+	height: 18px;
+	border: 0;
+	outline: none;
+	-moz-box-shadow: none;
+	font: normal 14px/18px MuseoSans, arial, sans-serif;
+	color: #c5e9f5;
+	text-decoration: none;
+	background-color: #0e8fc8;
+	background-image: url('../media/icons_contact_sprite.png');
+	background-repeat: no-repeat;
+	background-position: right -235px;
+
+	-webkit-transition: all .1s ease;	
+	-moz-transition: all .1s ease;			
+	-o-transition: all .1s ease;						
+	transition: all .1s ease;	
+ }
+ 
+ .col.side .ui-selectmenu {  
+	margin-bottom: 0;
+ }
+ 
+ /* Sidebar Forms */
+ 
+.ui-selectmenu-status {
+	display: block;
+ 	padding: 0;
+ 	color: #c5e9f5;
+ }
+ 
+.ui-selectmenu.ui-state-hover,
+.ui-selectmenu.ul-state-active,
+.ui-selectmenu.ul-state-active a,
+.ui-selectmenu.ul-state-active a:hover {
+	background-color: #159bcd;
+	color: #fff;
+	border: 0;
+	outline: none;
+	-moz-box-shadow: none;
+	
+	-webkit-transition: all .1s ease;	
+	-moz-transition: all .1s ease;			
+	-o-transition: all .1s ease;						
+	transition: all .1s ease;	
+}
+
+.ui-selectmenu.ui-state-hover .ui-selectmenu-status,
+.ui-selectmenu.ul-state-active .ui-selectmenu-status,
+.ui-selectmenu.ul-state-active a .ui-selectmenu-status,
+.ui-selectmenu.ul-state-active a:hover .ui-selectmenu-status {
+	color: #fff;
+}	
+
+ 
+.ui-selectmenu-icon { 
+	position:absolute; 
+	right:6px; 
+	margin-top:-8px; 
+	top: 50%; 
+}
+
+.ui-selectmenu-menu { 
+	padding:0; margin:0; 
+	position:absolute; 
+	top: 0; 
+	display: none; 
+	z-index: 1005; /* z-index: 1005 to make selectmenu work with dialog */
+} 
+
+.ui-selectmenu-menu ul {
+	width: 100%;
+	padding:0; margin:0; 
+	list-style:none; 
+	position: relative; 
+	overflow: auto; 
+	overflow-y: auto; 
+	overflow-x: hidden; 
+	-webkit-overflow-scrolling: touch;
+}
+
+.ui-selectmenu-open { 
+	display: block; 
+	color: #fff;
+	background-color: #0e8fc8;
+	border-top: none;
+	padding: 5px 0;
+
+}
+
+ul.ui-selectmenu-menu-popup { 
+	margin-top: -1px; 
+}
+
+.ui-selectmenu-menu li { 
+	width: 100%;
+	margin: 0; 
+	display: block; 
+	border: 0;
+	background: none;
+}
+
+.ui-selectmenu-menu li a { 
+	display: block;
+	padding: 6px 15px 5px;
+	color: #c5e9f5;
+	display: block; 
+	outline:none; 
+	text-decoration:none; 
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.ui-selectmenu-menu li:last-child a { 
+	border-bottom: none;
+}
+
+.ui-selectmenu-menu li.ul-state-hover a,
+.ui-selectmenu-menu li a:hover,
+a.ui-selectmenu:hover {
+	background-color: #159bcd;
+	color: #fff;
+	text-decoration: none;
+}
+
+a.ui-selectmenu:hover {
+
+
+}
+
+
+.ui-selectmenu-menu li.ui-state-disabled a, 
+.ui-state-disabled { 
+	cursor: default; 
+}
+
+.ui-selectmenu-menu li.ui-selectmenu-hasIcon a,
+.ui-selectmenu-hasIcon .ui-selectmenu-status { 
+	position: relative; 
+}
+
+.ui-selectmenu-menu li .ui-icon, 
+.ui-selectmenu-status .ui-icon { 
+	position: absolute; 
+	top: 1em; 
+	margin-top: -8px; 
+	left: 0; 
+}
+
+
+.ui-selectmenu-menu li span,
+.ui-selectmenu-status span { 
+	display:block; 
+	margin-bottom: .2em; 
+}
+
+/* IE6 workaround (dotted transparent borders) */
+* html .ui-selectmenu-menu li { border-color: pink; filter:chroma(color=pink); width:100%; }
+* html .ui-selectmenu-menu li a { position: relative }
+/* IE7 workaround (opacity disabled) */
+*+html .ui-state-disabled, *+html .ui-state-disabled a { color: silver; }
+
+/* /////////////////////////////////
+	@2x Images
+///////////////////////////////// */
+
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),  
+        only screen and (   min--moz-device-pixel-ratio: 1.5),  
+        only screen and (     -o-min-device-pixel-ratio: 3/2),  
+        only screen and (        min-device-pixel-ratio: 1.5),  
+        only screen and (min-resolution: 192dpi) {  
+
+	.ui-selectmenu {  
+		background-image: url('../media/icons_contact_sprite@2x.png');
+		-webkit-background-size: 24px 324px;
+		-moz-background-size: 24px 324px;
+		background-size: 24px 324px;
+	 }        
+        
+}        

@@ -1,0 +1,60 @@
+<?php if( have_rows('slideshow') ): ?>
+<section id="hero">
+	<div class="slider cycle-slideshow"
+		data-cycle-fx="scrollHorz"
+		data-cycle-pause-on-hover="false"
+		data-cycle-speed="750"
+		data-cycle-timeout="10000"
+		data-cycle-prev=".slide-left.home"
+		data-cycle-next=".slide-right.home"
+		data-cycle-slides="> div.slide"
+		data-cycle-swipe="true"
+		data-cycle-pager=".slide-tabs.home"
+		>
+		
+		<?php if( !empty($intro_image) ) { ?>
+		<div class="slide">
+			<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+			<div class="slide-heading">
+				<h1><?php echo $intro_heading; ?></h1>
+	 			<p class="large"><?php echo $intro_subheading; ?></p>
+	 			<p><a class="button" href="<?php echo $intro_button_link; ?>"><?php echo $intro_button_text; ?></a></p>
+	 		</div>
+	 	</div>
+		<?php } ?>
+		
+		<?php while( have_rows('slideshow') ) : the_row(); ?>
+		<?php 
+        	$image = get_sub_field('image');
+        	$heading = get_sub_field('heading');
+        	$content = get_sub_field('content');
+        	$link = get_sub_field('link');
+        	
+        	if( !empty($image) ) {
+				$url = $image['url'];
+				$alt = $image['alt'];
+				$size = 'Home Slideshow';
+				$thumb = $image['sizes'][ $size ];
+				$width = $image['sizes'][ $size . '-width' ];
+				$height = $image['sizes'][ $size . '-height' ];
+			};
+        ?>
+		<div class="slide">
+			<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+			<div class="slide-info tan">
+				<div class="heading blue border-top">
+					<h3><?php echo $heading; ?></h3>
+				</div>
+				<p><?php echo $content; ?></p>
+				<a class="button green" href="<?php echo $link; ?>"><span>Learn More</span></a>
+			</div>
+		</div>
+		<?php endwhile; ?>
+					
+		<!-- empty element for pager links -->
+		<div class="slide-tabs pager home"></div>
+		<a class="slide-left home" href="#" onClick="_gaq.push(['_trackEvent', 'Home', 'Slide Nav', 'Prev']);"></a>
+		<a class="slide-right home" href="#" onClick="_gaq.push(['_trackEvent', 'Home', 'Slide Nav', 'Next']);"></a>
+	</div>
+</section>
+<?php endif; ?>

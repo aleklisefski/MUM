@@ -1,0 +1,10 @@
+/*
+Theme Name: MUM
+Theme URI: http://mum.edu
+Author: Alek Lisefski
+Author URI: http://www.bluesheepstudios.com
+*/
+
+@import "style/css/reset.css";
+@import "style/css/typography.css";
+@import "style/css/layout.css";

@@ -1,0 +1,601 @@
+/* /////////////////////////////////////
+	MUM Lynch MA CSS 
+	by Alek Lisefski
+	http://www.bluesheepstudios.com
+///////////////////////////////////// */
+
+#news, section#page-header {
+    border-top: 0;
+}
+
+/* HTML5 Background Video */
+
+#hero.bg-video {
+	background-color: #2d2624;	
+	background-image: url('../media/lynch_bg.jpg');
+	background-repeat: repeat;
+	background-position: center top;
+}
+
+#hero.bg-video .gradiant {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	
+	background: -webkit-linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.9));
+	background: -o-linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.9));
+	background: -moz-linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.9));
+	background: linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.9));
+}
+
+#hero.bg-video .slide .slide-info.download.blue {
+    background-color: #1398cc;
+    max-width: 500px;
+    width: 500px;
+    top: auto;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -250px;
+    z-index: 500;
+}
+
+#hero.bg-video .slide .blue.border-top {
+    border: 0;
+    border-bottom: 5px solid #159bcd;
+    padding: 16px 20px 10px;
+}
+
+#hero.bg-video .slide .slide-info.download.blue input[type="submit"], 
+#hero.bg-video .slide .slide-info.download.blue a.button, 
+#hero.bg-video .slide .slide-info.download.blue a.button:visited {
+	display: inline-block;
+	float: right;
+    padding: 10px 18px 6px;
+    text-align: center;
+    width: auto;
+    font-size: 13px;
+}
+
+#hero.bg-video .slide .slide-info.download.blue input[type="submit"].mobile, 
+#hero.bg-video .slide .slide-info.download.blue a.button.mobile, 
+#hero.bg-video .slide .slide-info.download.blue a.button:visited.mobile {
+	display: none;
+}
+
+#hero.bg-video .video-overlay {
+	position: absolute;
+	z-index: 101;
+	top: 30%;
+	width: 100%;
+	left: 0;
+	color: #fff;
+	text-align: center;
+}
+
+#hero.bg-video .video-overlay h1.small,
+#hero.bg-video .video-overlay h2.large,
+#hero.bg-video .video-overlay .name {
+	text-align: center;
+	color: #fff;
+	width: 80%;
+	margin: 0 10%;
+}
+
+#hero.bg-video .video-overlay h1.small {
+	font-family: MuseoSans;
+	font-weight: normal;
+	text-transform: none;
+	letter-spacing: 0;
+	font-size: 36px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+#hero.bg-video .video-overlay h2.large {
+	font-size: 72px;
+	line-height: 72px;
+	margin-bottom: 10px;
+}
+
+#hero.bg-video .video-overlay h2.large span {
+	display: inline-block;
+	padding-top: 20px;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	border-color: rgba(255,255,255,0.25);
+}
+
+#hero.bg-video .video-overlay .name,
+#lynch-letter strong {
+	color: #f9e1b9;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: MuseoSansBold;
+}
+
+#lynch-letter {
+	background-image: url('../media/lynch_bg-top.png'), url('../media/lynch_bg-bottom.png'), url('../media/lynch_bg.jpg');
+	background-repeat: no-repeat, no-repeat, repeat;
+	background-position: left top, right bottom, center top;
+	color: #fff;
+}
+
+#lynch-letter .gradiant {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	
+	background: -webkit-linear-gradient(180deg,rgba(0,0,0,0.7),rgba(0,0,0,0));
+	background: -o-linear-gradient(180deg,rgba(0,0,0,0.7),rgba(0,0,0,0));
+	background: -moz-linear-gradient(180deg,rgba(0,0,0,0.7),rgba(0,0,0,0));
+	background: linear-gradient(180deg,rgba(0,0,0,0.7),rgba(0,0,0,0));
+}
+
+#lynch-letter .container {
+	padding-top: 0;
+	padding-bottom: 0;	
+	z-index: 1;
+}
+
+#lynch-letter .width-60 {
+	width: 57%;
+	margin-right: 6%;
+	padding: 90px 0;
+}
+
+#lynch-letter .width-40 {
+	width: 37%;
+	margin-right: 0;
+	padding-top: 30px;
+}
+
+#lynch-letter .width-40 img {
+	width: 100%;
+	height: auto;
+	margin-bottom: -50px;
+}
+
+#lynch-letter .width-60 img.sig {
+	float: right;
+	margin-right: 40px;
+	margin-bottom: 0;
+}
+
+section.body h3.margin-bottom-none {
+	margin-bottom: 1px;
+}
+
+/* A/B Test Interest Options Select */
+
+#hero.bg-video .slide .slide-info.download.blue.options {
+    background-color: #1398cc;
+    max-width: 560px;
+    width: 560px;
+    top: auto;
+    bottom: 8%;
+    left: 50%;
+    margin-left: -280px;
+    z-index: 500;
+}
+
+#hero.bg-video .slide .blue.options .border-top {
+    border: 0;
+    border-bottom: 5px solid #159bcd;
+    padding: 20px 25px 0;
+}
+
+
+#hero.bg-video .slide .slide-info.download.blue.options .heading h4 {
+   font-size: 17px;
+   font-family: MuseoSans, arial, sans-serif;
+   margin-bottom: 15px;
+}
+
+
+#hero.bg-video .slide .slide-info.download.blue.options .heading .select {
+    display: inline-block;
+    float: left;
+    width: 65%;
+    padding: 0;
+    margin: 0 2% 0 0;
+}
+
+#hero.bg-video .slide .slide-info.download.blue.options .heading .select .ui-selectmenu {
+	margin-bottom: 20px;
+}
+
+#hero.bg-video .slide .slide-info.download.blue.options input[type="submit"], 
+#hero.bg-video .slide .slide-info.download.blue.options a.button, 
+#hero.bg-video .slide .slide-info.download.blue.options a.button:visited {
+	display: inline-block;
+	float: left;
+    padding: 10px 0 6px;
+    text-align: center;
+    width: 33%;
+    font-size: 13px;
+}
+
+
+/* /////////////////////////////////
+	DLMA Signup Pop-up
+///////////////////////////////// */
+
+
+.lynch-signup {
+	background-color: #2d2624;
+	color: #fff;	
+	background-image: url('../media/lynch_fish.png'), url('../media/lynch_bg-top.png'), url('../media/lynch_bg-bottom.png'), url('../media/lynch_bg.jpg');
+	background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+	background-position: right top, -500px top, -100px bottom, center top;
+	padding: 60px 90px 60px 60px;
+	width: 560px;
+	text-align: left;
+}
+
+.lynch-signup h2,
+.lynch-signup h3,
+.lynch-signup h4,
+.lynch-signup p,
+.lynch-signup li {
+	color: #fff;
+	text-align: left;	
+}
+
+.lynch-signup ul {
+	list-style-type: none;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+.lynch-signup li {
+	text-align: left;
+	background: url(../media/bullet_light.png) no-repeat left 2px;
+	line-height: 18px;
+	padding: 0 0 8px 14px;
+}
+
+.lynch-signup h2 {
+	font-family: MuseoSlab, arial, sans-serif;
+	font-weight: bold;
+	text-transform: none; 
+	letter-spacing: 0;  
+	font-size: 32px;
+	line-height: 36px;
+	margin-bottom: 0;
+	margin-bottom: 30px;
+}
+
+.lynch-signup h4 {
+	font: bold 15px/20px MuseoSansBold, arial, sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 30px;	
+}
+
+
+.lynch-signup p,
+.lynch-signup li {
+	font-size: 14px;
+	line-height: 20px;	
+}
+
+.lynch-signup form {
+	width: 50%;
+}
+
+.lynch-signup input[type="text"],
+.lynch-signup input[type="email"],
+.lynch-signup textarea {
+	display: block;
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-shadow: none;
+	-webkit-appearance: none;
+	width: 95%;
+	text-indent: 15px;
+	height: 100%;
+	padding: 10px 5% 9px 0;
+	margin: 0 0 6px 0;
+	border: 0;
+	text-align: left;
+	outline: none;
+	-moz-box-shadow: none;
+	border-radius: 0;
+	font: normal 14px/18px MuseoSans, arial, sans-serif;
+	color: #fff;
+	background-color: #000;
+
+	-webkit-transition: all .1s ease;	
+	-moz-transition: all .1s ease;			
+	-o-transition: all .1s ease;						
+	transition: all .1s ease;		
+}
+
+.lynch-signup .size1of2 label {
+	float: left;
+	display: inline-block;
+	line-height: 18px;
+	padding: 10px 5% 9px 0;
+	margin: 0;
+	min-width: 0;
+	width: 19%;
+}
+
+.lynch-signup .phonefield-us input[type="text"] {
+	display: inline-block;
+	width: 19%;
+}
+
+.lynch-signup input[type="submit"] {
+	color: #fff;
+	background: #f6bd27;
+	border-color: #f1a718;
+	padding: 6px 0 4px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;	
+}
+
+.lynch-signup input[type="submit"]:hover {
+	background: #59ae35 url('../media/bg_green.gif') repeat left top;
+	border-bottom: 4px solid #59ae35;
+}
+
+.lynch-signup .input-group p {
+	margin: 10px 0 8px 10px;
+}
+
+
+.lynch-signup .input-group ul {
+	margin: 0;
+}
+
+.lynch-signup .input-group li {
+	background: none;
+	padding: 0 0 0 10px;
+	display: inline-block;
+	float: left;
+	margin: 0 0 20px 0;
+	width: 50px;
+}
+
+.lynch-signup .input-group li input[type="radio"] {
+	display: inline;
+	float: left; 
+	margin: 0 4px 0 0;
+}
+
+.lynch-signup .input-group li label {
+	display: inline;
+	min-width: 0;
+	margin: 0;
+	float: none;
+	clear: none;
+}
+
+
+
+/* //////// Tablet //////// */
+
+@media screen and (max-width: 1024px) {
+
+	#hero.bg-video .gradiant {
+		height: 300px;
+	}
+	
+	#hero.bg-video .slide .slide-info.download.blue {
+	    background-color: #1398cc;
+	    max-width: 500px;
+	    width: 500px;
+	    top: auto;
+	    bottom: 0;
+	    left: 50%;
+	    margin-left: -250px;
+	    z-index: 500;
+	}
+	
+	#hero.bg-video .video-overlay {
+		top: 20%;
+	}
+	
+	#hero.bg-video .video-overlay.options {
+		top: 30%;
+	}
+	
+	#hero.bg-video .video-overlay h1.small,
+	#hero.bg-video .video-overlay h2.large,
+	#hero.bg-video .video-overlay .name {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	#hero.bg-video .video-overlay h1.small {
+		font-size: 28px;
+		line-height: 28px;
+	}
+	
+	#hero.bg-video .video-overlay h2.large {
+		font-size: 54px;
+		line-height: 54px;
+
+	}
+	
+	#hero.bg-video .video-overlay h2.large span {
+		padding-top: 0;
+		border-width: 0;
+	}	
+	
+	#lynch-letter .width-60 {
+		width: 59%;
+		margin-right: 4%;
+		padding: 70px 0 60px;
+	}
+	
+	#lynch-letter .width-40 {
+		padding-top: 120px;
+	}
+	
+	
+	#hero.bg-video .slide .slide-info.download.blue.options {
+		position: relative;
+		display: block;
+		right: 0;
+		left: 0;
+		top: 0;
+		clear: left;
+		margin: 0;
+		height: auto;
+		width: 100%;	
+		max-width: 100%;
+	}
+	
+	#hero.bg-video .slide .slide-info.download.blue.options .heading {
+		padding: 30px 4% 10px;
+	}
+	
+}
+
+/* //////// Mobile //////// */
+
+@media screen and (max-width: 640px) {
+
+	#hero.bg-video .slide {
+	    background-image: url('../media/lynch_bg.jpg');
+		background-repeat: repeat;
+		background-position: center top;
+	}
+	
+	#hero.bg-video .slide img.mobile {
+	    display: none;
+	}
+	
+	#hero.bg-video .video-overlay {
+		position: static;
+		right: auto;
+		top: auto;
+		clear: left;
+		margin-top: 0;
+		height: auto;
+		width: 100%;	
+		padding: 35px 0 30px;	
+	}
+	
+	#hero.bg-video .video-overlay h1.small {
+		font-size: 18px;
+		line-height: 18px;
+		margin-bottom: 20px;
+	}
+	
+	#hero.bg-video .video-overlay h2.large {
+		font-size: 36px;
+		line-height: 36px;
+		margin-bottom: 15px;
+	}
+	
+	#hero.bg-video .slide .slide-info.download.blue {
+		position: static;
+		right: auto;
+		left: auto;
+		top: auto;
+		clear: left;
+		margin: 0;
+		height: auto;
+		width: 100%;	
+		max-width: 100%;
+	}
+	
+	#hero.bg-video .gradiant,
+	#lynch-letter .gradiant {
+		display: none;
+	}
+	
+	#hero .slide .slide-info.download.blue .heading h3,
+	#hero .slide .slide-info.download.blue .heading h5 {
+	    text-align: center;
+	}
+	
+	#hero .slide .slide-info.download.blue .heading h3 {
+	    font-size: 20px;
+	    line-height: 28px;
+	    margin-bottom: 10px;
+	}
+	
+	#hero.bg-video .slide .slide-info.download.blue input[type="submit"].mobile, 
+	#hero.bg-video .slide .slide-info.download.blue a.button.mobile, 
+	#hero.bg-video .slide .slide-info.download.blue a.button:visited.mobile {
+		display: block;
+		float: none;
+	    padding: 9px 0 6px;
+	    width: 100%;
+	}
+	
+	#hero.bg-video .slide .slide-info.download.blue input[type="submit"].desktop, 
+	#hero.bg-video .slide .slide-info.download.blue a.button.desktop, 
+	#hero.bg-video .slide .slide-info.download.blue a.button:visited.desktop {
+		display: none;
+	}
+	
+	#lynch-letter {
+		background-position: -500px top, right bottom, center top;
+	}
+	
+	#lynch-letter .width-60,
+	#lynch-letter .width-40 {
+		width: 100%;
+		margin-right: 0;
+		padding: 35px 0 25px;
+	}
+	
+	#lynch-letter .width-40 {
+		padding: 0;
+	}
+	
+	.lynch-signup {
+		background-image: url('../media/lynch_bg-top.png'), url('../media/lynch_bg-bottom.png'), url('../media/lynch_bg.jpg');
+		background-repeat: no-repeat, no-repeat, repeat;
+		background-position: -700px top, -500px bottom, center top;
+		padding: 30px 6%;
+		width: 88%;
+	}
+	
+	.lynch-signup form {
+		width: 100%;
+	}
+	
+	.lynch-signup h4 {
+		margin-bottom: 30px;	
+	}
+	
+	.lynch-signup ul {
+		margin-bottom: 20px;
+		margin-left: 0;	
+	}
+	
+
+}
+
+/* /////////////////////////////////
+	@2x Images
+///////////////////////////////// */
+
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),  
+        only screen and (   min--moz-device-pixel-ratio: 1.5),  
+        only screen and (     -o-min-device-pixel-ratio: 3/2),  
+        only screen and (        min-device-pixel-ratio: 1.5),  
+        only screen and (min-resolution: 192dpi) {  
+        
+.lynch-signup li {
+		background-image: url(../media/bullet_light@2x.png);
+		-webkit-background-size: 6px 10px;
+		-moz-background-size: 6px 10px;
+		background-size: 6px 10px;
+	}
+	
+
+}

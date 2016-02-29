@@ -1,0 +1,30 @@
+# BEGIN HTTPS Redirection Plugin
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+# END HTTPS Redirection Plugin
+
+# Added by the pair Networks Software Installation Manager
+AddType application/x-httpd-php .php
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+#RedirectMatch 301 ^/graduation/.* http://portals.mum.edu/RelId/623232/ISvars/default/Application_for_Graduation.htm
+
+Redirect 301 /graduation http://portals.mum.edu/RelId/623232/ISvars/default/Application_for_Graduation.htm
+Redirect 301 /graduation/application.html http://portals.mum.edu/RelId/623232/ISvars/default/Application_for_Graduation.htm
+Redirect 301 /giving http://portals.mum.edu/default.aspx?relid=606517
+Redirect 301 /pay http://portals.mum.edu/pay

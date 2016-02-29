@@ -1,0 +1,124 @@
+/* /////////////////////////////////
+	BASIC TEXT / HEADINGS
+///////////////////////////////// */
+
+@font-face {
+    font-family: 'MuseoSlabBold';
+    src: url('../font/museo_slab_500-webfont.eot');
+    src: url('../font/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museo_slab_500-webfont.woff') format('woff'),
+         url('../font/museo_slab_500-webfont.ttf') format('truetype'),
+         url('../font/museo_slab_500-webfont.svg#MuseoSlab') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansBold';
+    src: url('../font/museosans_500-webfont.eot');
+    src: url('../font/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans_500-webfont.woff') format('woff'),
+         url('../font/museosans_500-webfont.ttf') format('truetype'),
+         url('../font/museosans_500-webfont.svg#MuseoSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1,
+h3,
+h4,
+nav li a,
+nav li a:visited,
+footer .col a.box strong,
+.green.contact h3,
+.grid.thirds.circles .item .image label span, 
+.item.circle .image label span,
+.dropDown ul li a, 
+section.dropDown .grid.fourths li a,
+.menu ul li a, 
+section.menu .grid.fourths li a {
+	font-weight: normal;
+	font-family: MuseoSlabBold;
+}
+
+.grid.thirds.circles .item .image label span, 
+.item.circle .image label span,{
+	font-weight: normal;
+	font-family: MuseoSlabItalic;
+}
+
+#news.tan span {
+    font-weight: normal;
+}
+
+#news.tan span strong,
+#subnav li a {
+    font-weight: normal;
+    font-family: MuseoSansBold;
+}
+
+#subnav {
+	margin-top: 62px;
+}
+
+#subnav ul {
+	margin-left: -4px;
+	border: 4px solid #fff7e2;
+	border-top: 0;
+}
+
+#subnav ul li ul {
+	border: 0;
+	border-left: 1px solid #f7f3e7;
+	padding: 0;
+	margin: 5px 0 15px 20px;
+}
+
+
+
+/* Remove black border on .png opacity */
+
+.icon {
+	background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */
+    zoom: 1;
+}
+
+/* Replace rbg value for green button border */
+.button.green,
+.button.green:visited {
+	background: url('../media/bg_white.png') repeat left top;	
+}
+
+.grid.thirds.circles .item .image,
+.item.circle .image {
+	width: 86%;
+	margin: 0 7%;
+}
+
+.grid.thirds.circles .item .image img.border, 
+.item.circle .image img.border {
+    border: 6px solid #fff;
+    box-shadow: none;
+    margin: 0 3%;
+    width: 89%;
+}
+
+.tan .cta img {
+	border: 2px solid #fff;
+	box-shadow: none;
+}
+
+.testimonials .item.circle p {
+	padding-left: 10px;
+}
+
+.col.side .box.green li {
+	border-top: 1px solid #7ecd57;
+}
+
+
+
+

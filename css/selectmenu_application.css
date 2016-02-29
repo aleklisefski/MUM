@@ -1,0 +1,178 @@
+/* Selectmenu
+----------------------------------*/
+
+.app .ui-selectmenu {  
+	width: 54%;
+	padding: 9px 0 7px 0;
+	text-indent: 15px;
+	margin: 0 0 0 0;
+	height: 100%;
+	border: 2px solid #fbf8f1;
+	color: #666;
+	background-color: #fff;
+	background-image: url('../media/subnav_arrow-down.png');
+	background-position: 98% 15px;
+	box-sizing: content-box;
+	/*-moz-box-sizing: border-box;*/
+ }
+ 
+ 
+.app .ui-selectmenu-status {
+	display: block;
+ 	padding: 0;
+ 	color: #666;
+ }
+ 
+
+.app .ui-selectmenu.ui-state-hover,
+.app .ui-selectmenu.ul-state-active,
+.app .ui-selectmenu.ul-state-active a,
+.app .ui-selectmenu.ul-state-active a:hover {
+	border-color: #f7f1e4;
+	background-color: #fff !important;
+	background-position: 98% -65px;
+	color: #333;
+	outline: none;
+	-moz-box-shadow: none;
+	
+	-webkit-transition: all .1s ease;	
+	-moz-transition: all .1s ease;			
+	-o-transition: all .1s ease;						
+	transition: all .1s ease;	
+}
+
+
+.app .ui-selectmenu.ui-state-hover .ui-selectmenu-status,
+.app .ui-selectmenu.ul-state-active .ui-selectmenu-status,
+.app .ui-selectmenu.ul-state-active a .ui-selectmenu-status,
+.app .ui-selectmenu.ul-state-active a:hover .ui-selectmenu-status {
+	color: #333;
+}	
+
+
+.ui-selectmenu-open.app  { 
+	display: block; 
+	color: #666;
+	background-color: #fff;
+	border-top: none;
+	padding: 5px 0;
+	border: 2px solid #f7f1e4;
+	border-top: 0;
+}
+
+
+.ui-selectmenu-menu.app ul {
+	width: 100%;
+	padding:0; margin:0; 
+	list-style:none; 
+	position: relative; 
+	overflow: auto; 
+	overflow-y: auto; 
+	overflow-x: hidden; 
+	-webkit-overflow-scrolling: touch;
+}
+
+.app ul.ui-selectmenu-menu-popup { 
+	margin-top: -1px; 
+}
+
+.ui-selectmenu-menu.app li { 
+	width: auto;
+	margin: 0; 
+	display: block; 
+	border: 0;
+	background: none;
+}
+
+.ui-selectmenu-menu.app li a { 
+	display: block;
+	padding: 6px 15px 5px;
+	color: #666;
+	display: block; 
+	outline:none; 
+	text-decoration:none; 
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: normal;
+}
+
+.ui-selectmenu-menu.app li.ui-selectmenu-group { 
+	display: block;
+	padding: 6px 15px 5px;
+	color: #333;
+	display: block; 
+	outline:none; 
+	text-decoration:none; 
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+.ui-selectmenu-menu.app li:last-child a { 
+	border-bottom: none;
+}
+
+.ui-selectmenu-menu.app li.ul-state-hover a,
+.ui-selectmenu-menu.app li a:hover,
+.app a.ui-selectmenu:hover {
+	background-color: #fbf8f1;
+	color: #333;
+	text-decoration: none;
+}
+
+.app a.ui-selectmenu:hover {
+	background-color: #fff;
+	border: 2px solid #f7f1e4;
+	color: #333;
+}
+
+
+.ui-selectmenu-menu.app li.ui-state-disabled a, 
+.app .ui-state-disabled { 
+	cursor: default; 
+}
+
+.ui-selectmenu-menu.app li.ui-selectmenu-hasIcon a,
+.app .ui-selectmenu-hasIcon .ui-selectmenu-status { 
+	position: relative; 
+}
+
+.ui-selectmenu-menu.app li .ui-icon, 
+.app .ui-selectmenu-status .ui-icon { 
+	position: absolute; 
+	top: 1em; 
+	margin-top: -8px; 
+	left: 0; 
+}
+
+
+.ui-selectmenu-menu.app  li span,
+.app .ui-selectmenu-status span { 
+	display:block; 
+	margin-bottom: .2em; 
+}
+
+/* IE6 workaround (dotted transparent borders) */
+* html .app  .ui-selectmenu-menu li { border-color: pink; filter:chroma(color=pink); width:100%; }
+* html .app  .ui-selectmenu-menu li a { position: relative }
+/* IE7 workaround (opacity disabled) */
+*+html .app  .ui-state-disabled, *+html .ui-state-disabled a { color: silver; }
+
+/* /////////////////////////////////
+	@2x Images
+///////////////////////////////// */
+
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),  
+        only screen and (   min--moz-device-pixel-ratio: 1.5),  
+        only screen and (     -o-min-device-pixel-ratio: 3/2),  
+        only screen and (        min-device-pixel-ratio: 1.5),  
+        only screen and (min-resolution: 192dpi) {  
+
+	.app .ui-selectmenu {  
+		background-image: url('../media/subnav_arrow-down@2x.png');
+		-webkit-background-size: 12px 166px;
+		-moz-background-size: 12px 166px;
+		background-size: 12px 166px;
+	 }        
+        
+}        
